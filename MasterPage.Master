@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="HealthCare.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <link href="Scripts/jquery-ui.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body bgcolor="thistle">
+    <form id="form1" runat="server">
+        <div>
+      
+        <center>
+            <table width="80%" height="15%">
+                <tr>
+                    <td width="13%" align="left">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/logo.jpg" Height="118px" /> 
+                    </td>
+                    <td width="60%" align="Middle" class="td">
+                       <b style="font-size: 28pt; color: #000000">HEALTH CARE</b>
+                    </td>
+                    <!--<td width="13%" align="right">
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~/images/doctors.jpg" /> 
+                    </td>-->
+                </tr> 
+                
+            </table>
+            <table width="80%">
+                 <tr>
+                    <td align="left">
+                        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                            
+                        
+                       </asp:contentplaceholder>
+                    </td>
+                </tr>
+            </table>
+            
+        </center>
+    </div>
+    </form>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/jquery-ui.js"></script>
+    <script src="Scripts/html2canvas.min.js"></script>
+    <script src="Scripts/pdfmake.min.js"></script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>
